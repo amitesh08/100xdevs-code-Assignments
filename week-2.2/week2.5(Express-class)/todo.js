@@ -11,6 +11,7 @@ const todo = [{
 }]
   
 app.get('/todo',(req,res)=>{
+    res.send();
     
 })
 

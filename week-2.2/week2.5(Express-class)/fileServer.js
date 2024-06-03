@@ -12,6 +12,7 @@ app.get('/files',(req,res)=>{
         })
     })
 })
+
 app.get('/file/:filename',(req,res)=>{
     const filepath = path.join(__dirname, './files/', req.params.filename);
     fs.readFile(filepath,"utf-8",(err,data)=>{
