@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 
 const zod = require('zod'); // importing ZOD
-const schema = zod.array(zod.number());  // it will onlu accept the array of number nothing else pretty easy right..
+const schema = zod.array(zod.number());  // it will only accept the array of number nothing else pretty easy right..
 
 // eamil : string 
 // password : atleast 8 letters
