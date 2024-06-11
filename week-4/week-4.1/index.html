@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<script>
+    function populateDiv(){
+        //document: it is global variable through which you can manipulate DOM
+        //to get the input values
+        const a = document.getElementById("firstNumber").value; //it will access the input value by using .value
+        const b = document.getElementById("secondNumber").value;
+        const element = document.getElementById("finalSum") 
+        //innerHTML lets you write inside the html
+        element.innerHTML =  parseInt(a) + parseInt(b); // parseInt is global function which convert strings to int.
+
+    }
+</script>
+<body>
+    <input id="firstNumber" type="text" placeholder="firstNumber"></input> <br><br>
+    <input id="secondNumber" type="text" placeholder="secondNumber"></input> <br><br>
+    <button onclick="populateDiv()">Calculate Sum</button><br><br>
+    <div id ="finalSum"></div>
+</body>
+</html>
