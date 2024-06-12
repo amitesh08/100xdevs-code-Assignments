@@ -1,0 +1,44 @@
+<html>
+    <script>
+        let globalId = 1;
+
+        function markAsDone(todoId){
+            const container = document.getElementById(todoId)
+            container.children[2].innerHTML = "Done !"
+        }
+        function createChild(title, description, id){
+            //document.createElement
+            const childDiv = document.createElement("div");
+            const firstGp = document.createElement("div");
+            firstGp.innerHTML = title ;
+            const secondGp = document.createElement("div");
+            secondGp.innerHTML = description ;
+            const thirdGp = document.createElement("button");
+            thirdGp.innerHTML = "mark as done" ;
+            thirdGp.setAttribute("onclick", `markAsDone(${id})`)     
+            childDiv.appendChild(firstGp);  //.append will add the element to the container.
+            childDiv.appendChild(secondGp);
+            childDiv.appendChild(thirdGp);
+            childDiv.setAttribute("id", id);
+            return childDiv;
+        }
+        function addTodo(){
+            const title = document.getElementById("title").value;
+            const description = document.getElementById("description").value
+            const container = document.getElementById("container")
+            
+            container.appendChild(createChild(title, description, globalId++));
+
+        }
+    </script>
+    <body>
+        <div>
+            <input id="title" type="text" placeholder="title"> </input><br><br>
+            <input id="description" placeholder="Description"> </input><br><br>
+            <button onclick="addTodo()">ADD TODO</button>
+            <div id="container">
+
+            </div>
+        </div>
+    </body>
+</html>
