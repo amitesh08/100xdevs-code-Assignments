@@ -8,3 +8,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
   </React.StrictMode>,
 )
+
+// jsx : is js file in which you can write both XML and JS
