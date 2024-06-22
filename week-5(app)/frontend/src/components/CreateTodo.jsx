@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+//to create new todos 
 export function CreateTodo(){
     const [title, setTitle] = useState("");
     const [description, setDescription] = useState("");
@@ -26,7 +26,7 @@ export function CreateTodo(){
             padding:10,
             margin:10
             }} onClick={()=>{
-                fetch("http://localhost:3000/todo", {
+                fetch("http://localhost:3000/todo", {  //it will add the new todo to DB
                     method: "POST",
                     body: JSON.stringify({
                         title: title,

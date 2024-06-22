@@ -1,5 +1,5 @@
 export function Todos({todos}){
-    //return all the div
+    //to render all the existing Todos 
     return <div>
             {todos.map(function(todo){
                 return  <div>

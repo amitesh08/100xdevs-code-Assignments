@@ -4,6 +4,7 @@ const { string, boolean } = require("zod");
 
 mongoose.connect("mongodb+srv://admin:amitesh123@cluster0.2idz5qj.mongodb.net/todos");
 
+//providing Schemas to DB 
 const todoSchema = mongoose.Schema({
     title: String,
     description: String,

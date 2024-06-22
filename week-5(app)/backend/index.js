@@ -6,12 +6,12 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
+app.use(express.json()); //to parse body 
 
-app.use(cors());
+app.use(cors());   //to avoid cors error
 
 
-
+//to create new Todo
 app.post("/todo",async(req,res)=>{
     const createPayload = req.body;
     const parsedPayload = createTodo.safeParse(createPayload);
@@ -35,6 +35,7 @@ app.post("/todo",async(req,res)=>{
 
 })
 
+//to get all the added Todos
 app.get("/todos", async (req,res)=>{
     //get the todos from the database 
     const todos = await todo.find({}); // await data to come back to user
@@ -43,6 +44,7 @@ app.get("/todos", async (req,res)=>{
     })
 })
 
+//to update the todo as completed 
 app.put("/completed",async(req,res)=>{
     const updatePayload = req.body;
     const parsedPayload = updateTodo.safeParse(updatePayload);
