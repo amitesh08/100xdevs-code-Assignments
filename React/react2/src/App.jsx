@@ -1,5 +1,7 @@
 import Card from "./components/Card"
 
+//props in react 
+
 function App() {
 
   return (

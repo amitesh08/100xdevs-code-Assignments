@@ -1,0 +1,22 @@
+.count{
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+.count-display{
+    font-size: 10em;
+    margin: 0,50px;
+}
+.increment{
+    background-color: skyblue;
+    margin-right: 10px;
+    
+}
+.decrement{
+    background-color: red;
+    margin-right: 10px;
+}
+.reset{
+    background-color: cyan;
+    margin-right: 10px;
+}
