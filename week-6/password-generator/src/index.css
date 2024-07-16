@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4; /* Light gray background */
+  margin: 0;
+  padding: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(85, 65, 65, 0.5); /* Slightly more opaque background */
+  margin: 5% 15%;
+  border-radius: 15px;
+  padding: 30px; /* Increased padding for better spacing */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 50px;
+  margin-bottom: 20px; /* Space between heading and input */
+}
+
+.inner-display {
+  display: flex;
+  justify-content: center; /* Center the input field horizontally */
+  margin-bottom: 20px; /* Added space below inner display */
+}
+
+.input-display {
+  color: rgb(231, 15, 15);
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid rgba(231, 15, 15, 0.5); /* Border for better visibility */
+  border-radius: 5px;
+  margin: 5px 8px;
+  width: 500px; /* Fixed width for the input */
+  outline: none;
+  transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+.input-display::placeholder {
+  color: #f60707; /* Placeholder color */
+}
+
+.input-display:focus {
+  border-color: rgb(231, 15, 15); /* Change border color on focus */
+}
+
+button {
+  background-color: blue; /* Button background color */
+  color: white;
+  font-size: 30px;
+  padding: 10px 20px; /* Added padding for better button size */
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: darkblue; /* Darker blue on hover */
+}
+
+label {
+  color: white;
+}
