@@ -1,8 +1,11 @@
-const express = require('express')
-const userRouter = require('./user') //importing user router
+// backend/user/index.js
+const express = require('express');
+const userRouter = require("./user");
+const accountRouter = require("./account");
 
-const router = express.Router(); // creating router
+const router = express.Router();
 
-router.use("/user", userRouter) ; //using user router
+router.use("/user", userRouter);
+router.use("/account", accountRouter);
 
-module.exports = router ; //exporting router
+module.exports = router;

@@ -1,7 +1,9 @@
-const mongoose = require("mongoose"); //importing mongoose
+// backend/db.js
+const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://admin:amitesh123@cluster0.2idz5qj.mongodb.net/payTM");
+mongoose.connect("mongodb+srv://admin:amitesh123@cluster0.2idz5qj.mongodb.net/payTm")
 
+// Create a Schema for Users
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -34,7 +36,7 @@ const userSchema = new mongoose.Schema({
 const accountSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId, // Reference to User model
-        ref: 'User',     
+        ref: 'User',
         required: true
     },
     balance: {
@@ -43,11 +45,10 @@ const accountSchema = new mongoose.Schema({
     }
 });
 
-const User = mongoose.model("User", userSchema); //creating model
-const Account = mongoose.model("Account", accountSchema);  //creating model
+const Account = mongoose.model('Account', accountSchema);
+const User = mongoose.model('User', userSchema);
 
-module.exports = { 
-    User,
-    Account,
+module.exports = {
+	User,
+    Account
 };
-
