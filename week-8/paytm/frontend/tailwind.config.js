@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        payTMBlue: 'rgb(224, 245, 253)', // Name it something
+      },
+    },
   },
   plugins: [],
 }
