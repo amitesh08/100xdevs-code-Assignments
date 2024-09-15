@@ -1,5 +1,5 @@
 
-export default function InputBox({label, placeholder}){
+export default function InputBox({label, placeholder, onChange}){
 
     return (
         <div>
@@ -7,7 +7,7 @@ export default function InputBox({label, placeholder}){
                 {label}
             </div>
             <div>
-                <input placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200" />
+                <input onChange={onChange} placeholder={placeholder} className="w-full px-2 py-1 border rounded border-slate-200" />
             </div>
         </div>
     )
