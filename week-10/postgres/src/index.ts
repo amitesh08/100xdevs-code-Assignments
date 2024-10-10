@@ -1,5 +1,6 @@
 import { Client } from 'pg'
- 
+import { connectionString } from './connectionString';
+
 // const client = new Client({
 //   connectionString: "connection string"
 
@@ -55,7 +56,7 @@ async function insertUserAndAddress(
     pincode: string
 ) {
     const client = new Client({
-      connectionString: "postgresql://test_owner:7r1JnDOjdRlv@ep-cool-fire-a5hfcte9.us-east-2.aws.neon.tech/test?sslmode=require"
+      connectionString: connectionString
       
     });
 
