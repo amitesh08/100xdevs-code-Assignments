@@ -1,1 +1,1 @@
-{"root":["./src/connectionstring.ts","./src/createtable.ts","./src/getdata.ts","./src/insertdata.ts","./src/utils.ts"],"version":"5.6.2"}
+{"root":["./src/connectionstring.ts","./src/createtable.ts","./src/deletedata.ts","./src/dropdata.ts","./src/getdata.ts","./src/insertdata.ts","./src/updatedata.ts","./src/utils.ts"],"version":"5.6.2"}
