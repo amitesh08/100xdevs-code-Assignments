@@ -24,7 +24,7 @@ async function insertData(){
             VALUES (amitesh; DROP TABLE users)
             which eventually will del your users table which is not good .
     */
-    const userValues = [`amitesh1@example.com`, `hashed_pass_here`];
+    const userValues = [`amitesh2@example.com`, `hashed_pass_here`];
 
     let response = await client.query(insertUserText,userValues);
 
@@ -46,7 +46,7 @@ async function insertData(){
     `;
     const todosValues = [
         'study',
-        'learn about postgres',
+        'learn about postgres2',
         response.rows[0].id,
         false
     ];
