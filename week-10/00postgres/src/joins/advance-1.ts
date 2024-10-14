@@ -10,11 +10,14 @@ async function getUserAndTodosWithJoin(userId: number){
         left join todos on people.id = todos.user_id 
         where people.id = $1
     `;
+    //inner join - 
+    //right join - 
+    //full join - 
 
     let res = await client.query(joinQuery, [userId])
     const result = res.rows;
 
-    console.log("user and todos: " , result)  // it convert result into array and show it to user.
+    console.log("user and todos: " , result) 
 
 }
 
