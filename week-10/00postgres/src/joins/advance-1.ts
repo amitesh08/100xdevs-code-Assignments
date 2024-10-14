@@ -14,7 +14,7 @@ async function getUserAndTodosWithJoin(userId: number){
     let res = await client.query(joinQuery, [userId])
     const result = res.rows;
 
-    console.log(`user and todos: ${JSON.stringify(result)}`)  // it convert result into array and show it to user.
+    console.log("user and todos: " , result)  // it convert result into array and show it to user.
 
 }
 
